@@ -1,3 +1,4 @@
+'use client'
 import Feature from "@/components/feature";
 import Integration from "@/components/integration";
 
@@ -37,8 +38,8 @@ export default function Home() {
 					<h1>Eenvoudig uitlenen, efficiënt beheren<span className="title-blue">Dé slimme oplossing voor uitleendiensten</span></h1>
 					<p>Ontworpen met een focus op overzicht, gebruiksgemak en snelheid. Start vandaag nog en ervaar het verschil!</p>
 					<div className="jumbotron--callToActions">
-						<button className="btn btn-blue">Vraag Offerte</button>
-						<button className="btn btn-gray">Vraag Offerte</button>
+						<button className="btn btn-blue" onClick={()=>{scrollTo(0,document.documentElement.scrollHeight)}}>Vraag Offerte</button>
+						<button className="btn btn-gray" onClick={()=>{window.open("https://comoda.noahvanleemput.com", "_blank")?.focus()}}>Bekijk Demo</button>
 					</div>
 					<div className="jumbotron--image">
 						<img className="jumbotron--pc" src="images/homepage.png" alt="een visualisatie van een pc scherm" />
@@ -135,7 +136,7 @@ Gebruiksgemak: Geen technische kennis nodig om scanners te gebruiken."
 						<h2>Biografie</h2>
 						<img src="images/me_me_me_pfp.jpg" alt="" />
 						<p>Ik ben Noah Van Leemput, een Grafische en Digitale Media student aan de AP Hogeschool in Antwerpen. Ik heb Comoda gemaakt voor de effiecientie en overzichtelijkheid van onze huidige uitleendienst te verhogen en frustraties onder studenten te verminderen.</p>
-						<button className="btn btn-blue">portfolio</button>
+						<button className="btn btn-blue" onClick={()=>{window.open("https://noahvanleemput.com", "_blank")?.focus()}}>portfolio</button>
 					</div>
 				</section>
 
@@ -179,7 +180,7 @@ Gebruiksgemak: Geen technische kennis nodig om scanners te gebruiken."
 				</section>
 			</main>
 			<footer>
-				<p>@ 2024 COMODA. All Rights Reserved</p>
+				<p>© 2024 COMODA. All Rights Reserved</p>
 			</footer>
 		</>
 	);

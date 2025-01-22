@@ -38,6 +38,11 @@ li {
     color: var(--black);
 }
 
+button:hover {
+	cursor: pointer;
+	filter: brightness(1.2);
+}
+
 section {
     padding: 1rem;
 }
@@ -451,6 +456,8 @@ footer p {
     margin: 0;
     align-self: flex-end;
     padding: 1rem;
+
+	font-size: 12px !important;
 }
 
 @media screen and (min-width: 600px) {
